@@ -22,10 +22,25 @@
         data[j] = temp;
       }
     }
-    console.log(i + 1, '회전: ', data);
+    // console.log(i + 1, '회전: ', data);
   }
   // 출력 : UI의 영역
   for (let i = 0; i < N; i++) {
     // console.log(data[i]);
+  }
+})();
+
+(() => {
+  let data = [4, 5, 2, 3, 1];
+  let N = data.length;
+  for (let i = 0; i < N - 1; i++) {
+    for (let j = i + 1; j < N; j++) {
+      if (data[i] > data[j]) {
+        let tmp = data[i];
+        data[i] = data[j];
+        data[j] = tmp;
+      }
+    }
+    console.log(i + 1, '회전: ', data);
   }
 })();
