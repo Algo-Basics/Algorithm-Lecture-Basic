@@ -6,7 +6,6 @@
   //[1] Input: Data Structure (Array,List,Stack,Queue,Tree,DB)
   let data = [3, 2, 1, 5, 4]; // 정렬되지 않은 데이터
   const N = data.length;
-  let result = [];
   //[2] Process: Selection Sort (선택정렬) 알고리즘
   for (let i = 0; i < N - 1; i++) {
     for (let j = i + 1; j < N; j++) {
@@ -18,7 +17,7 @@
       }
     }
   }
-  //[3] Output
+  // [3] Output
   for (let i = 0; i < N; i++) {
     console.log(data[i]);
   }
